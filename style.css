@@ -1,0 +1,63 @@
+body, html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-image: url(world.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 15px;
+}
+.country {
+    text-align: center;
+    border-radius: 5px;
+    background: transparent;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #66ff66;
+    text-align: center;
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+}
+
+.country:hover .inner{
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.back {
+    text-align: center;
+    border-radius: 5px;
+    background: #007b19;
+    font-size: xx-large;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+
+h1 {
+
+}
